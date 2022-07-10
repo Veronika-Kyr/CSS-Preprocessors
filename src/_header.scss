@@ -41,9 +41,11 @@
         padding: 252px 386px 256px 386px;
 
         .heroBlock__logoBig {
-            position: absolute;
-            top: 200px;
-            left: 735px;
+            // position: absolute;
+            // top: 200px;
+            // left: 735px;
+            display: block;
+            margin: 0 auto;
             width: 63px;
             height: 63px;
             transition: transform 1s ease-in-out;

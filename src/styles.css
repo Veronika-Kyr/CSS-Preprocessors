@@ -1,57 +1,5 @@
 @import url(https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,600;1,700;1,900&display=swap);
-@-webkit-keyframes Apperance {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes Apperance {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes SlideInOut {
-  from {
-    top: 26px;
-    left: 605px;
-  }
-  to {
-    top: 6px;
-    left: 585px;
-  }
-}
-@keyframes SlideInOut {
-  from {
-    top: 26px;
-    left: 605px;
-  }
-  to {
-    top: 6px;
-    left: 585px;
-  }
-}
-.image--animaStar {
-  position: absolute;
-  top: 62px;
-  left: 907px;
-  opacity: 0;
-  animation: Apperance 3s ease-in 0.5s infinite alternate-reverse;
-}
-
-.image--animaDots {
-  position: absolute;
-  top: 26px;
-  left: 605px;
-  width: 47%;
-  animation: SlideInOut 3s ease-in 0.5s infinite alternate-reverse;
-}
-
 body {
   width: 1200px;
   font-family: "Source Sans Pro", sans-serif;
@@ -118,9 +66,8 @@ a {
   padding: 252px 386px 256px 386px;
 }
 .header .heroBlock .heroBlock__logoBig {
-  position: absolute;
-  top: 200px;
-  left: 735px;
+  display: block;
+  margin: 0 auto;
   width: 63px;
   height: 63px;
   transition: transform 1s ease-in-out;
@@ -300,6 +247,59 @@ a {
   padding-top: 15px;
 }
 
+@-webkit-keyframes Apperance {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes Apperance {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes SlideInOut {
+  from {
+    top: 26px;
+    left: 605px;
+  }
+  to {
+    top: 6px;
+    left: 585px;
+  }
+}
+@keyframes SlideInOut {
+  from {
+    top: 26px;
+    left: 605px;
+  }
+  to {
+    top: 6px;
+    left: 585px;
+  }
+}
+.image--animaStar {
+  position: absolute;
+  top: 62px;
+  left: 907px;
+  opacity: 0;
+  animation: Apperance 3s ease-in 0.5s infinite alternate-reverse;
+}
+
+.image--animaDots {
+  position: absolute;
+  top: 26px;
+  left: 605px;
+  width: 47%;
+  animation: SlideInOut 3s ease-in 0.5s infinite alternate-reverse;
+}
+
 @media (max-width: 768px) {
   body {
     width: 483px;
@@ -326,20 +326,20 @@ a {
     left: 137px;
     top: 68px;
     width: 65%;
+    width: 65%;
   }
   .header .image--animaDots {
     position: absolute;
     top: 27px;
     left: -170px;
     width: 105%;
+    width: 105%;
   }
   .header .heroBlock {
     padding: 200px 48px 246px 48px;
   }
   .header .heroBlock .heroBlock__logoBig {
-    position: absolute;
-    top: 170px;
-    left: 315px;
+    display: block;
   }
   @-webkit-keyframes SlideInOut {
     from {
