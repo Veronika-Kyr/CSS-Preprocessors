@@ -1,0 +1,38 @@
+@keyframes Apperance {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes SlideInOut {
+
+    from {
+        top: 26px;
+        left: 605px;
+    }
+
+    to {
+        top: 6px;
+        left: 585px;
+    }
+}
+
+.image--animaStar {
+    position: absolute;
+    top: 62px;
+    left: 907px;
+    opacity: 0;
+    animation: Apperance 3s ease-in 0.5s infinite alternate-reverse;
+}
+
+.image--animaDots {
+    position: absolute;
+    top: 26px;
+    left: 605px;
+    width: 47%;
+    animation: SlideInOut 3s ease-in 0.5s infinite alternate-reverse;
+}

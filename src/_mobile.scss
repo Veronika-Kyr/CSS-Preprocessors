@@ -1,0 +1,172 @@
+@media(max-width: 768px) {
+    body {
+        width: 483px;
+    }
+
+    .header {
+        background: url('../assets/header.png') right;
+
+        .nav {
+            position: relative;
+            padding-left: 20px;
+            width: 433px;
+
+            .nav__link:not(.nav__link--siteName) {
+                display: none;
+            }
+
+            .nav__image--burger {
+                display: block;
+                width: 22px;
+                text-align: right;
+                padding-left: 330px;
+            }
+
+        }
+
+        .image--animaStar {
+            position: absolute;
+            left: 137px;
+            top: 68px;
+            width: 65%;
+        }
+
+        .image--animaDots {
+            position: absolute;
+            top: 27px;
+            left: -170px;
+            width: 105%;
+        }
+
+        .heroBlock {
+            padding: 200px 48px 246px 48px;
+
+            .heroBlock__logoBig {
+                position: absolute;
+                top: 170px;
+                left: 315px;
+            }
+        }
+
+    }
+
+    @keyframes SlideInOut {
+
+        from {
+            top: 27px;
+            left: -170px;
+        }
+
+        to {
+            top: 10px;
+            left: -190px;
+        }
+    }
+
+
+
+    .colorSection {
+        position: static;
+        margin-top: -90px;
+        width: 483px;
+        height: 990px;
+
+        .colorSection__head {
+            padding: 65px 62px 41px 27px;
+            margin-bottom: 0;
+            text-align: left;
+        }
+
+        .colorSection__subhead {
+            margin-bottom: 18px;
+            text-align: left;
+            margin-left: 27px;
+        }
+
+        .colorSection__text {
+            margin: 0 23px 21px 27px;
+
+            .colorSection__text--wrapper {
+                grid-template-columns: auto;
+            }
+        }
+
+        .colorSection__button--btnRead {
+            margin-left: 27px;
+        }
+    }
+
+    .imageSection {
+        position: static;
+        margin-top: -90px;
+        width: 483px;
+        height: 637px;
+
+        .imageSection--cover {
+            position: static;
+            margin-top: -90px;
+            width: 483px;
+            height: 637px;
+
+            .imageSection__head {
+                padding-top: 40px;
+                margin-top: 0;
+                margin-bottom: 66px;
+            }
+
+            .imageSection__button--btnPlay {
+                position: static;
+                width: 90px;
+                height: 75px;
+                margin: 0 auto;
+                padding-top: 25px;
+                padding-left: 10px;
+
+                .imageSection__button--triangle {
+                    position: static;
+                    margin: 0 auto;
+                    border-top: 23px solid transparent;
+                    border-left: 46px solid $text-color;
+                    border-bottom: 23px solid transparent;
+                }
+            }
+
+            .imageSection__text--learnMore {
+                position: static;
+                margin: 70px 41px 0 43px;
+                padding: 0;
+            }
+        }
+    }
+
+    .footer {
+        position: static;
+        height: 292px;
+        width: 483px;
+        margin-top: -22px;
+
+        .footer__addInformation {
+            padding-top: 58px;
+            padding-left: 0;
+            margin-left: 0;
+
+            .footer__wrapper {
+                grid-template-columns: 1fr;
+                text-align: center;
+
+                .footer__wrapper--logoWord {
+                    padding-left: 15px;
+                }
+
+                .footer__wrapper--smallLogo {
+                    margin: 0;
+                }
+
+                .footer__wrapper--markRights {
+                    padding-top: 19px;
+                }
+            }
+        }
+    }
+
+}

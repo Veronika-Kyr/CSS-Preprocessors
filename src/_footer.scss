@@ -1,0 +1,46 @@
+.footer {
+    position: absolute;
+    top: 2166px;
+    height: 170px;
+    background: $footerBackground-color;
+    width: 1200px;
+
+    .footer__addInformation {
+        margin-top: 21px;
+        margin-left: 140px;
+        text-align: left;
+        color: rgba(255, 255, 255, 0.4);
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 400;
+
+        .footer__wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr 2fr;
+
+            .footer__wrapper--smallLogo {
+                margin: 19px 0 12px 5px;
+            }
+
+            .footer__wrapper--logoWord {
+                padding-left: 16px;
+                color: $text-color;
+                font-size: 18px;
+                line-height: 16px;
+                font-weight: 400;
+                letter-spacing: 0.2em;
+            }
+
+            .footer__wrapper--markRights {
+                padding-top: 74px;
+                text-align: center;
+                margin: 0;
+            }
+
+            .footer__wrapper--email {
+                display: block;
+                padding-top: 15px;
+            }
+        }
+    }
+}

@@ -1,0 +1,69 @@
+.imageSection {
+    position: absolute;
+    top: 1500px;
+    height: 666px;
+    background: url('../assets/IMG-main.png');
+    margin: 0;
+    width: 1200px;
+
+    .imageSection--cover {
+        position: absolute;
+        top: 0;
+        height: 666px;
+        background: rgba(140, 79, 42, 0.3);
+        width: 1200px;
+
+        .imageSection__head {
+            margin-top: 84px;
+            margin-bottom: 53px;
+            color: $text-color;
+        }
+
+        .imageSection__button--btnPlay {
+            position: absolute;
+            top: 254px;
+            left: 525px;
+            background: $btn-color;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            transition: all 1s ease-in-out;
+
+            &:hover {
+                background: $text-color;
+                transform: scale(0.8);
+            }
+
+            &:hover>.imageSection__button--triangle {
+                border-left: 55px solid $btn-color;
+            }
+
+            .imageSection__button--triangle {
+                position: absolute;
+                top: 47px;
+                left: 40px;
+                margin-left: 15px;
+                width: 0px;
+                height: 0px;
+                border-top: 27.5px solid transparent;
+                border-left: 55px solid $text-color;
+                border-bottom: 27.5px solid transparent;
+                border-radius: 2px;
+                transition: border-left 1s ease-in-out;
+            }
+        }
+
+        .imageSection__text--learnMore {
+            position: absolute;
+            top: 474px;
+            color: $text-color;
+            font-size: 24px;
+            line-height: 32px;
+            text-align: center;
+            font-weight: 400;
+            font-style: normal;
+            padding-left: 360px;
+            padding-right: 360px;
+        }
+    }
+}
