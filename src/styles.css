@@ -57,7 +57,7 @@ a {
   letter-spacing: 0.2em;
   color: #FFFFFF;
 }
-.header .nav .nav__image--burger {
+.header .nav .nav__burger {
   display: none;
 }
 .header .nav .nav__link--underline {
@@ -108,7 +108,7 @@ a {
   font-weight: 400;
   text-align: center;
 }
-.colorSection .colorSection__text {
+.colorSection .colorSection__wrapper {
   margin: 0 143px 21px 150px;
   font-size: 16px;
   line-height: 22px;
@@ -116,13 +116,13 @@ a {
   text-align: left;
   color: #000000;
 }
-.colorSection .colorSection__text .colorSection__text--wrapper {
+.colorSection .colorSection__wrapper .colorSection__text {
   display: grid;
   grid-template-columns: 1fr 1fr;
   -moz-column-gap: 83px;
        column-gap: 83px;
 }
-.colorSection .colorSection__button--btnRead {
+.colorSection .colorSection__btnRead {
   display: block;
   margin: 0 auto;
   padding: 5px 17px 6px 18px;
@@ -134,14 +134,14 @@ a {
   font-size: 14px;
   line-height: 26px;
   font-family: "Oswald", sans-serif;
-  font-weight: normal;
+  font-weight: 400;
   width: 115px;
   height: 36px;
   letter-spacing: 0.1em;
   cursor: pointer;
   transition: transform 1s ease-in-out;
 }
-.colorSection .colorSection__button--btnRead:hover {
+.colorSection .colorSection__btnRead:hover {
   transform-origin: left;
   transform: rotateZ(15deg);
 }
@@ -154,19 +154,19 @@ a {
   margin: 0;
   width: 1200px;
 }
-.imageSection .imageSection--cover {
+.imageSection .imageSection__cover {
   position: absolute;
   top: 0;
   height: 666px;
   background: rgba(140, 79, 42, 0.3);
   width: 1200px;
 }
-.imageSection .imageSection--cover .imageSection__head {
+.imageSection .imageSection__cover .imageSection__head {
   margin-top: 84px;
   margin-bottom: 53px;
   color: #FFFFFF;
 }
-.imageSection .imageSection--cover .imageSection__button--btnPlay {
+.imageSection .imageSection__cover .imageSection__btnPlay {
   position: absolute;
   top: 254px;
   left: 525px;
@@ -176,14 +176,14 @@ a {
   border-radius: 50%;
   transition: all 1s ease-in-out;
 }
-.imageSection .imageSection--cover .imageSection__button--btnPlay:hover {
+.imageSection .imageSection__cover .imageSection__btnPlay:hover {
   background: #FFFFFF;
   transform: scale(0.8);
 }
-.imageSection .imageSection--cover .imageSection__button--btnPlay:hover > .imageSection__button--triangle {
+.imageSection .imageSection__cover .imageSection__btnPlay:hover > .imageSection__triangle {
   border-left: 55px solid #55C2D8;
 }
-.imageSection .imageSection--cover .imageSection__button--btnPlay .imageSection__button--triangle {
+.imageSection .imageSection__cover .imageSection__btnPlay .imageSection__triangle {
   position: absolute;
   top: 47px;
   left: 40px;
@@ -196,7 +196,7 @@ a {
   border-radius: 2px;
   transition: border-left 1s ease-in-out;
 }
-.imageSection .imageSection--cover .imageSection__text--learnMore {
+.imageSection .imageSection__cover .imageSection__textLearnMore {
   position: absolute;
   top: 474px;
   color: #FFFFFF;
@@ -229,10 +229,10 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr 2fr;
 }
-.footer .footer__addInformation .footer__wrapper .footer__wrapper--smallLogo {
+.footer .footer__addInformation .footer__wrapper .footer__smallLogo {
   margin: 19px 0 12px 5px;
 }
-.footer .footer__addInformation .footer__wrapper .footer__wrapper--logoWord {
+.footer .footer__addInformation .footer__wrapper .footer__logoWord {
   padding-left: 16px;
   color: #FFFFFF;
   font-size: 18px;
@@ -240,12 +240,12 @@ a {
   font-weight: 400;
   letter-spacing: 0.2em;
 }
-.footer .footer__addInformation .footer__wrapper .footer__wrapper--markRights {
+.footer .footer__addInformation .footer__wrapper .footer__markRights {
   padding-top: 74px;
   text-align: center;
   margin: 0;
 }
-.footer .footer__addInformation .footer__wrapper .footer__wrapper--email {
+.footer .footer__addInformation .footer__wrapper .footer__email {
   display: block;
   padding-top: 15px;
 }
@@ -318,7 +318,7 @@ a {
   .header .nav .nav__link:not(.nav__link--siteName) {
     display: none;
   }
-  .header .nav .nav__image--burger {
+  .header .nav .nav__burger {
     display: block;
     width: 22px;
     text-align: right;
@@ -380,13 +380,13 @@ a {
     text-align: left;
     margin-left: 27px;
   }
-  .colorSection .colorSection__text {
+  .colorSection .colorSection__wrapper {
     margin: 0 23px 21px 27px;
   }
-  .colorSection .colorSection__text .colorSection__text--wrapper {
+  .colorSection .colorSection__wrapper .colorSection__text {
     grid-template-columns: auto;
   }
-  .colorSection .colorSection__button--btnRead {
+  .colorSection .colorSection__btnRead {
     margin-left: 27px;
   }
   .imageSection {
@@ -395,18 +395,18 @@ a {
     width: 483px;
     height: 637px;
   }
-  .imageSection .imageSection--cover {
+  .imageSection .imageSection__cover {
     position: static;
     margin-top: -90px;
     width: 483px;
     height: 637px;
   }
-  .imageSection .imageSection--cover .imageSection__head {
+  .imageSection .imageSection__cover .imageSection__head {
     padding-top: 40px;
     margin-top: 0;
     margin-bottom: 66px;
   }
-  .imageSection .imageSection--cover .imageSection__button--btnPlay {
+  .imageSection .imageSection__cover .imageSection__btnPlay {
     position: static;
     width: 90px;
     height: 75px;
@@ -414,14 +414,14 @@ a {
     padding-top: 25px;
     padding-left: 10px;
   }
-  .imageSection .imageSection--cover .imageSection__button--btnPlay .imageSection__button--triangle {
+  .imageSection .imageSection__cover .imageSection__btnPlay .imageSection__triangle {
     position: static;
     margin: 0 auto;
     border-top: 23px solid transparent;
     border-left: 46px solid #FFFFFF;
     border-bottom: 23px solid transparent;
   }
-  .imageSection .imageSection--cover .imageSection__text--learnMore {
+  .imageSection .imageSection__cover .imageSection__textLearnMore {
     position: static;
     margin: 70px 41px 0 43px;
     padding: 0;
@@ -441,13 +441,13 @@ a {
     grid-template-columns: 1fr;
     text-align: center;
   }
-  .footer .footer__addInformation .footer__wrapper .footer__wrapper--logoWord {
+  .footer .footer__addInformation .footer__wrapper .footer__logoWord {
     padding-left: 15px;
   }
-  .footer .footer__addInformation .footer__wrapper .footer__wrapper--smallLogo {
+  .footer .footer__addInformation .footer__wrapper .footer__smallLogo {
     margin: 0;
   }
-  .footer .footer__addInformation .footer__wrapper .footer__wrapper--markRights {
+  .footer .footer__addInformation .footer__wrapper .footer__markRights {
     padding-top: 19px;
   }
 }/*# sourceMappingURL=styles.css.map */

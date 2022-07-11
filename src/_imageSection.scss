@@ -4,14 +4,14 @@
     height: 666px;
     background: url('../assets/IMG-main.png');
     margin: 0;
-    width: 1200px;
+    width: $general-width;
 
-    .imageSection--cover {
+    .imageSection__cover {
         position: absolute;
         top: 0;
         height: 666px;
-        background: rgba(140, 79, 42, 0.3);
-        width: 1200px;
+        background: $cover-color;
+        width: $general-width;
 
         .imageSection__head {
             margin-top: 84px;
@@ -19,7 +19,7 @@
             color: $text-color;
         }
 
-        .imageSection__button--btnPlay {
+        .imageSection__btnPlay {
             position: absolute;
             top: 254px;
             left: 525px;
@@ -34,11 +34,11 @@
                 transform: scale(0.8);
             }
 
-            &:hover>.imageSection__button--triangle {
+            &:hover>.imageSection__triangle {
                 border-left: 55px solid $btn-color;
             }
 
-            .imageSection__button--triangle {
+            .imageSection__triangle {
                 position: absolute;
                 top: 47px;
                 left: 40px;
@@ -53,14 +53,14 @@
             }
         }
 
-        .imageSection__text--learnMore {
+        .imageSection__textLearnMore {
             position: absolute;
             top: 474px;
             color: $text-color;
             font-size: 24px;
             line-height: 32px;
             text-align: center;
-            font-weight: 400;
+            font-weight: $font-normal;
             font-style: normal;
             padding-left: 360px;
             padding-right: 360px;

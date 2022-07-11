@@ -4,40 +4,40 @@
     background: $background-color;
     height: 700px;
     margin: 0;
-    width: 1200px;
+    width: $general-width;
 
     .colorSection__head {
         margin-top: 87px;
         margin-bottom: 40px;
         color: $footerBackground-color;
-        font-weight: 700;
+        font-weight: $font-bold;
     }
 
     .colorSection__subhead {
         margin-bottom: 48px;
         font-size: 24px;
         line-height: 32px;
-        color: #666666;
-        font-weight: 400;
+        color: $grey;
+        font-weight: $font-normal;
         text-align: center;
     }
 
-    .colorSection__text {
+    .colorSection__wrapper {
         margin: 0 143px 21px 150px;
         font-size: 16px;
         line-height: 22px;
-        font-weight: 400;
+        font-weight: $font-normal;
         text-align: left;
-        color: #000000;
+        color: $black;
 
-        .colorSection__text--wrapper {
+        .colorSection__text {
             display: grid;
             grid-template-columns: 1fr 1fr;
             column-gap: 83px;
         }
     }
 
-    .colorSection__button--btnRead {
+    .colorSection__btnRead {
         display: block;
         margin: 0 auto;
         padding: 5px 17px 6px 18px;
@@ -49,7 +49,7 @@
         font-size: 14px;
         line-height: 26px;
         font-family: $head-font;
-        font-weight: normal;
+        font-weight: $font-normal;
         width: 115px;
         height: 36px;
         letter-spacing: 0.1em;

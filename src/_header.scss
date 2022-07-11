@@ -23,12 +23,12 @@
         .nav__link {
             font-size: 14px;
             line-height: 16px;
-            font-weight: 400;
+            font-weight: $font-normal;
             letter-spacing: 0.2em;
             color: $text-color;
         }
 
-        .nav__image--burger {
+        .nav__burger {
             display: none;
         }
 
@@ -57,9 +57,9 @@
 
         .heroBlock__subhead {
             font-size: 24px;
-            color: rgba(255, 255, 255, 0.7);
+            color: $transp-white-add;
             line-height: 32px;
-            font-weight: 400;
+            font-weight: $font-normal;
         }
     }
 
