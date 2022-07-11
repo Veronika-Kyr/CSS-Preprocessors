@@ -23,31 +23,27 @@
             }
         }
 
-        .image--animaStar {
+        .header__imageAnimaStar {
             position: absolute;
-            left: 137px;
+            left: 37px;
             top: 68px;
-            width: 65%;
-            width: 65%;
+            width: 93%;
         }
 
-        .image--animaDots {
+        .header__imageAnimaDots {
             position: absolute;
-            top: 27px;
-            left: -170px;
-            width: 105%;
-            width: 105%;
+            top: 26px;
+            left: -265px;
+            width: 147%;
         }
 
         .heroBlock {
             padding: 200px 48px 246px 48px;
 
             .heroBlock__logoBig {
-                // position: absolute;
-                display: block;
-
-                // top: 170px;
-                // left: 217px;
+                position: absolute;
+                top: 140px;
+                left: 215px;
             }
         }
     }
@@ -55,13 +51,13 @@
     @keyframes SlideInOut {
 
         from {
-            top: 27px;
-            left: -170px;
+            top: 26px;
+            left: -265px;
         }
 
         to {
             top: 10px;
-            left: -190px;
+            left: -280px;
         }
     }
 

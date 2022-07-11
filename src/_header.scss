@@ -2,7 +2,7 @@
     background: url('../assets/header.png');
     height: 800px;
     margin: 0;
-
+    position: relative;
 
     .nav {
         position: absolute;
@@ -39,13 +39,12 @@
 
     .heroBlock {
         padding: 252px 386px 256px 386px;
+        position: relative;
 
         .heroBlock__logoBig {
-            // position: absolute;
-            // top: 200px;
-            // left: 735px;
-            display: block;
-            margin: 0 auto;
+            position: absolute;
+            top: 200px;
+            left: 565px;
             width: 63px;
             height: 63px;
             transition: transform 1s ease-in-out;

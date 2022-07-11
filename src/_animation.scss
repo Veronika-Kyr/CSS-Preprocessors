@@ -11,28 +11,28 @@
 @keyframes SlideInOut {
 
     from {
-        top: 26px;
-        left: 605px;
+        top: 23px;
+        left: 446px;
     }
 
     to {
-        top: 6px;
-        left: 585px;
+        top: 3px;
+        left: 426px;
     }
 }
 
-.image--animaStar {
+.header__imageAnimaStar {
     position: absolute;
-    top: 62px;
-    left: 907px;
+    top: 61px;
+    left: 748px;
     opacity: 0;
     animation: Apperance 3s ease-in 0.5s infinite alternate-reverse;
 }
 
-.image--animaDots {
+.header__imageAnimaDots {
     position: absolute;
-    top: 26px;
-    left: 605px;
-    width: 47%;
+    top: 23px;
+    left: 446px;
+    width: 60%;
     animation: SlideInOut 3s ease-in 0.5s infinite alternate-reverse;
 }
